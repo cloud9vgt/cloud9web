@@ -1,0 +1,215 @@
+
+/* font injection */
+@font-face {
+    font-family: 'Bebas';
+    src: url('fonts/BebasKai.otf');
+}
+
+@font-face {
+    font-family: 'Contrail';
+    src: url('fonts/ContrailOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'LilitaOne';
+    src: url('fonts/LilitaOne-Regular.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+body {
+    margin: 0px;
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 0px;
+    background-color: #9392F4;
+    width: 100%;
+}
+
+.subheader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#subheader-text {
+    font-family: 'Bebas';
+    text-decoration: none;
+    transform: scaleY(1.10);
+    font-weight: 100;
+    font-size: 45px;
+    margin: 20px;
+}
+
+
+/* general styling of navbar unordered list */
+
+ul {
+    list-style-type: none; /*remove da bullet point list */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-family: 'LilitaOne';
+  }
+
+
+.nav__item {
+    margin-inline: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+    position: relative;
+    padding: 5px;
+}
+
+
+
+.nav__item::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 28, 236);
+    transition: all 0.2s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav__item:hover::after {
+    width: 100%;
+}
+
+
+
+.logo__img {
+    max-width: 15vw; /* Adjust logo size */
+    height: auto;
+}
+
+.subheader {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+/* Ensures text is inside and above the background image */
+.subheader-text-container {
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.subheader-background {
+    background: linear-gradient( rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.82) ), url('images/subheader.jpg') no-repeat center center;
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+#subheader-text {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+/* Centers store-info-container inside subheader-background */
+.store-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    z-index: 1;
+    margin-top: 30px;
+
+}
+
+/* Styling for each store info section */
+.store-info-open-container,
+.store-info-address-container,
+.store-info-phone-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.store-info-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.store-info-container p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Contrail';
+    font-weight: lighter;
+    margin: 2px;
+}
+
+.shop-button {
+
+width: 170px;
+height: 55px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Bebas';
+border: 3px solid #FFF5F5;
+color: white;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 9px;
+margin-top: 30px;
+
+}
+
+
+.newest-arrivals-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bebas';
+    font-weight: normal !important;
+    transform: scaleY(1.20);
+    font-style: none;
+    font-size: 35px;
+    margin: 12px;
+
+}
+
+
+#newest-arrivals-text {
+    margin: 0px;
+}
+
+#cloud9-ad {
+    width: 100vw; /* Full viewport width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevents clipping */
+    display: block; /* Removes extra spacing */
+    margin: 0px;
+}
