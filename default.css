@@ -15,6 +15,8 @@
     src: url('fonts/LilitaOne-Regular.ttf');
 }
 
+
+
 a {
     text-decoration: none;
     color: white;
@@ -82,8 +84,8 @@ ul {
     left: 50%;
     bottom: 0;
     width: 0;
-    height: 2px;
-    background-color: rgb(0, 28, 236);
+    height: 4px;
+    background-color: rgb(36, 102, 215);
     transition: all 0.2s ease-in-out;
     transform: translateX(-50%);
 }
@@ -122,6 +124,18 @@ ul {
     align-items: center;
     justify-content: center;
     
+
+}
+
+.alt-subheader-background {
+    background: linear-gradient( rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.82) ), url('images/subheader.jpg') no-repeat center center;
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -197,14 +211,63 @@ margin-top: 30px;
     transform: scaleY(1.20);
     font-style: none;
     font-size: 35px;
-    margin: 12px;
+    margin: 11px;
 
 }
+
+.follow-us-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bebas';
+    font-weight: normal !important;
+    transform: scaleY(1.20);
+    font-style: none;
+    font-size: 35px;
+    margin: 10px;
+}
+
+.social-container {
+
+    background: #9392F4;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bebas';
+    font-weight: normal !important;
+    transform: scaleY(1.20);
+    font-style: none;
+    font-size: 15px;
+    margin: 11px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    
+}
+
+#follow-us-text {
+    margin: 0px;
+}
+
 
 
 #newest-arrivals-text {
     margin: 0px;
 }
+
 
 #cloud9-ad {
     width: 100vw; /* Full viewport width */
@@ -212,4 +275,360 @@ margin-top: 30px;
     object-fit: contain; /* Prevents clipping */
     display: block; /* Removes extra spacing */
     margin: 0px;
+    max-height: 400px;
 }
+
+/* Center the Swiper container */
+.swiper-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Style the slides */
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Position the navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white; /* Change arrow color */
+    padding: 0px;
+    margin: 0px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: white; /* Change arrow icon color */
+    font-size: 24px; /* Adjust size if needed */
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+/* Position the pagination dots */
+.swiper-pagination {
+    bottom: 10px !important; /* Move it slightly up */
+}
+
+.swiper-pagination-bullet {
+    background: white !important; /* Make dots visible */
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #9392F4 !important; /* Highlight active dot */
+    transform: scale(1.2); /* Slightly enlarge the active dot */
+}
+
+
+.master-staff-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.staff-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+    
+}
+
+#staff-header {
+
+    font-size: 45px;
+    font-family: 'Bebas';
+    margin-bottom: 7px;
+    margin-top: 15px;
+}
+
+.staff-list-container {
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#staff-item {
+
+    font-size: 26px;
+    font-family: 'LilitaOne';
+    margin: 5px;
+    color: #9392F4;
+
+}
+
+.master-contact-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+#contact-header {
+
+    font-size: 50px;
+    font-family: 'Bebas';
+    margin-bottom: 7px;
+    text-decoration: bold;
+    margin-top: 15px;
+
+}
+
+.contact-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;    
+}
+
+#contact {
+
+    font-size: 30px;
+    font-family: 'Contrail';
+    margin: 5px;
+
+}
+
+
+/* mobile settings */
+
+@media only screen and (max-width: 700px) {
+
+    .logo__img {
+        max-width: 40vw; /* Adjust logo size */
+        height: auto;
+    }
+
+    #subheader-text {
+        color: rgb(255, 255, 255);
+        font-size: 6vw;
+        text-align: center;
+        margin-bottom: 30px;
+    
+    }
+
+    .nav__list {
+
+        display: none;
+    }
+
+    .subheader-background {
+        background: linear-gradient( rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.82) ), url('images/subheader.jpg') no-repeat center center;
+        height: 280px;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    
+    }
+
+    .store-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        z-index: 1;
+        margin-top: 30px;
+    
+    }
+    
+    /* Styling for each store info section */
+    .store-info-open-container,
+    .store-info-address-container,
+    .store-info-phone-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .store-info-container img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .store-info-container p {
+        color: rgb(255, 255, 255);
+        font-size: 3.5vw;
+        font-family: 'Contrail';
+        font-weight: lighter;
+        margin: 4px;
+    }
+    
+    .shop-button {
+    
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas';
+    border: 3px solid #FFF5F5;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 9px;
+    margin-top: 30px;
+    
+    }
+
+    .newest-arrivals-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Bebas';
+        font-weight: normal !important;
+        transform: scaleY(1.20);
+        font-style: none;
+        font-size: 20px;
+        margin: 8px;
+    
+    }
+
+    .follow-us-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Bebas';
+        font-weight: normal !important;
+        transform: scaleY(1.20);
+        font-style: none;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    #newest-arrivals-text {
+        margin: 0px;
+    }
+    
+    
+    #cloud9-ad {
+        width: 100vw; /* Full viewport width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Prevents clipping */
+        display: block; /* Removes extra spacing */
+        margin: 0px;
+        max-height: 400px;
+    }
+    
+    /* Center the Swiper container */
+    .swiper-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    
+    
+    /* Style the slides */
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    
+    /* Position the navigation arrows */
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: white; /* Change arrow color */
+        padding: 0px;
+        margin: 0px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        color: white; /* Change arrow icon color */
+        font-size: 24px; /* Adjust size if needed */
+        display: none;
+    }
+    
+    .swiper-button-next {
+        right: 10px;
+    }
+    
+    .swiper-button-prev {
+        left: 10px;
+    }
+    
+    /* Position the pagination dots */
+    .swiper-pagination {
+        bottom: 10px !important; /* Move it slightly up */
+    }
+    
+    .swiper-pagination-bullet {
+        background: white !important; /* Make dots visible */
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background: #9392F4 !important; /* Highlight active dot */
+        transform: scale(1.2); /* Slightly large the active dot */
+    }
+
+    .social-container {
+
+        background: #9392F4;
+        width: 100%;
+        height: 119px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        
+    }
+
+    #social-item {
+
+        max-height: 50px;
+    }
+
+
+}
+
