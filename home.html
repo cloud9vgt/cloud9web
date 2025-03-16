@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+
+        <link rel="stylesheet" href="default.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..900&display=swap" rel="stylesheet">
+
+
+        <title>Cloud 9 Vape Glass & Tobacco</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!--HEADER CONTAINING NAV BAR AND LOGO.-->
+        <header class="header">
+
+            <div class="header-container">
+                <div class="logo_container">
+                    <a href="home.html" class="logo">
+                        <img src="images/logo.png" alt="Cloud 9 Vape Glass & Tobacco Logo" class="logo__img">
+                    </a>
+                </div>
+ 
+                <!--NAV BAR-->
+                <nav id="navigation" class="navbar">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="home.html" class="nav__link">HOME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="staff.html" class="nav__link">STAFF</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">CONTACT</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="apply.html" class="nav__link">CAREERS</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link2">SHOP INVENTORY</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+
+
+        <div class="subheader">
+
+            <div class="subheader-background">
+
+                <div id="subheader-background-image">
+
+
+                    <div class="subheader-text-container">
+                        <h1 id="subheader-text">
+                            ARAPAHOE COUNTY'S FINEST SMOKE SHOP
+                        </h1>
+                    </div>
+
+        
+                    <div class="store-info-container">
+        
+                        <div class="store-info-open-container">
+                            <img id="store-info-open-icon" src="/images/clock.png"></img>
+                            <p id="store-info-open">OPEN 08:00 AM to 10:00 PM DAILY</p>
+                        </div>
+        
+                        <div class="store-info-address-container">
+                            <img id="store-info-address-icon" src="/images/loc.png"></img>
+                            <p id="store-info-address">14655 E ARAPAHOE RD | AURORA, CO</p>
+                        </div>
+        
+                        <div class="store-info-phone-container">
+                            <img id="store-info-phone-icon" src="/images/phone.png"></img>
+                            <p id="store-info-phone">(303) 680 2412</p>
+                        </div>
+
+                        <div class="shop-button" href="/shop-gallery">SHOP GALLERY</div>
+
+    
+                    </div>
+
+        
+
+                </div>
+            </div>
+        </div>
+
+        <div class="newest-arrivals-container">
+            <p id="newest-arrivals-text">NEWEST ARRIVALS & SPECIALS</p>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/peak-ad.png" alt="Ad 1"></div>
+                <div class="swiper-slide"><img src="images/cookies-ad.png" alt="Ad 2"></div>
+                <div class="swiper-slide"><img src="images/quazar.png" alt="Ad 3"></div>
+                <div class="swiper-slide"><img src="images/foger.png" alt="Ad 4"></div>
+                <div class="swiper-slide"><img src="images/star buds collab banner.png" alt="Ad 5"></div>
+                <div class="swiper-slide"><img src="images/spring sale.png" alt="Ad 6"></div>
+
+            </div>
+        
+            <!-- Pagination (Dots) -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+        <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var swiper = new Swiper(".swiper-container", {
+                        loop: true, // Infinite loop
+                        autoplay: {
+                            delay: 5000, // Auto slide every 3 seconds
+                            disableOnInteraction: false
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev"
+                        },
+                        slidesPerView: 1, /* Show only one slide at a time */
+                        centeredSlides: false, /* Ensure slides don't appear off-center */
+                        allowTouchMove: true, /* Disable manual swiping */
+                    });
+                });
+        </script>
+
+
+        <div class="follow-us-container">
+            <p id="follow-us-text">FOLLOW US</p>
+        </div> 
+
+        <div class="social-container">
+            <div class="social-icons">
+                <img id="social-item" src="images/facebook.png"></img>
+                <img id="social-item" src="images/instagram.png"></img>
+                <img id="social-item" src="images/snapchat.png"></img>
+                <img id="social-item" src="images/google.png"></img>
+            </div>
+        </div>
+
+        <footer>
+            <p id="copyright">©2025. CLOUD 9 VAPE GLASS & TOBACCO</p>
+        </footer>
+    </body>
+
+
+
+</html>
